@@ -45,7 +45,7 @@ jobs:
         - os: ubuntu-22.04
           builder: nerdctl
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4.2.2
     - name: Set up Go
       uses: actions/setup-go@v5
       with:
@@ -84,7 +84,7 @@ jobs:
   test-kwok-e2e:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4.2.2
     - name: Set up Go
       uses: actions/setup-go@v5
       with:
@@ -109,7 +109,7 @@ jobs:
     continue-on-error: false
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4.2.2
     - name: Set up Go
       uses: actions/setup-go@v5
       with:
@@ -157,7 +157,7 @@ jobs:
     continue-on-error: false
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4.2.2
     - name: Set up Go
       uses: actions/setup-go@v5
       with:
